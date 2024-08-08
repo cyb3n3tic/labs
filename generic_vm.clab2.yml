@@ -27,4 +27,4 @@ topology:
         set / network-instance default interface ethernet-1/1.0
   links:
     - endpoints: ["srl1:e1-1", "ubuntu:eth1"]
-    - endpoints: ["srl1:e1-1", "srl2:e1-1"]
+    - endpoints: ["srl1:e1-2", "srl2:e1-1"]
