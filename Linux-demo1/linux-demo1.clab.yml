@@ -9,6 +9,8 @@ topology:
     n2:
       kind: linux
       image: alpine:latest
-
+    bridge1:
+      kind: bridge
   links:
-    - endpoints: ["n1:eth1","n2:eth1"]
+    - endpoints: ["n1:eth1","bridge1:eth2"]
+    - endpoints: ["n2:eth1","bridge1:eth3"]
