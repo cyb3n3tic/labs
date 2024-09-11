@@ -12,5 +12,5 @@ topology:
     bridge1:
       kind: bridge
   links:
-    - endpoints: ["n1:eth1","bridge1:eth2"]
-    - endpoints: ["n2:eth1","bridge1:eth3"]
+    - endpoints: ["n1:eth1","br0-if:eth2"]
+    - endpoints: ["n2:eth1","br0-if:eth3"]
